@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceci Law</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<style>
+    #p-1{
+        background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        /* bottom, image */
+        url(https://images.pexels.com/photos/6446681/pexels-photo-6446681.jpeg?cs=srgb&dl=pexels-karina-zhukovskaya-6446681.jpg&fm=jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+    #p-2{
+        background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        /* bottom, image */
+        url(https://images.pexels.com/photos/1831271/pexels-photo-1831271.jpeg?cs=srgb&dl=pexels-madison-inouye-1831271.jpg&fm=jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+    #p-3{
+        background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        /* bottom, image */
+        url(https://images.pexels.com/photos/5658532/pexels-photo-5658532.jpeg?cs=srgb&dl=pexels-cottonbro-5658532.jpg&fm=jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+    #p-4{
+        background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        /* bottom, image */
+        url(https://images.pexels.com/photos/917494/pexels-photo-917494.jpeg?cs=srgb&dl=pexels-efdal-yildiz-917494.jpg&fm=jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+    #p-5{
+        background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        /* bottom, image */
+        url(https://images.pexels.com/photos/1226398/pexels-photo-1226398.jpeg?cs=srgb&dl=pexels-suzy-hazelwood-1226398.jpg&fm=jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+    #p-6{
+        background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        /* bottom, image */
+        url(https://images.pexels.com/photos/1212407/pexels-photo-1212407.jpeg?cs=srgb&dl=pexels-sharon-mccutcheon-1212407.jpg&fm=jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+    #p-1:hover, #p-2:hover, #p-3:hover, #p-4:hover, #p-5:hover, #p-6:hover{
+        background-position: 50% 80%;
+        transition: .3s ease-in-out;
+    }
+</style>
+
+
+<body>
+
+<!-- Section 1 -->
+<section id="home" class="w-full antialiased bg-white">
+    <div class="mx-auto max-w-7xl h-screen flex flex-col justify-between">
+
+        <nav class="relative z-50 h-24 select-none" x-data="{ showMenu: false }">
+            <div class="container relative flex flex-wrap items-center justify-between h-24 mx-auto overflow-hidden font-medium border-b border-gray-200 md:overflow-visible lg:justify-center sm:px-4 md:px-2">
+                <div class="flex items-center justify-start w-1/4 h-full pr-4">
+                    <a href="#_" class="inline-block py-4 md:py-0">
+                        <span class="p-1 text-xl font-black leading-none text-gray-900"><span>Ceci.L</span><span class="text-indigo-600">.</span></span>
+                    </a>
+                </div>
+                <div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex" :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
+                    <div class="flex-col w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
+                        <a href="#_" class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">tails<span class="text-indigo-600">.</span></a>
+                        <div class="flex flex-col items-start justify-center w-full space-x-6 text-center lg:space-x-8 md:w-2/3 md:mt-0 md:flex-row md:items-center">
+                            <a href="#home" class="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-indigo-600 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center">Home</a>
+                            <a href="#skills" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center">Skills</a>
+                            <a href="#projects" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center">Projects</a>
+                            <a href="#contact" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div @click="showMenu = !showMenu" class="absolute right-0 flex flex-col items-center items-end justify-center w-10 h-10 bg-white rounded-full cursor-pointer md:hidden hover:bg-gray-100">
+                    <svg class="w-6 h-6 text-gray-700" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" x-cloak="">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg class="w-6 h-6 text-gray-700" x-show="showMenu" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" x-cloak="">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Hero Content -->
+        <div class="h-full flex px-4 items-center">
+            <div class="container max-w-lg mx-auto text-left md:max-w-none md:text-center">
+                <h1
+                    class="text-5xl font-extrabold leading-loose tracking-tight text-left text-gray-900 md:text-center sm:leading-none md:text-6xl lg:text-7xl">
+                    <span>Finally.</span>
+                    <span class="inline md:block">Bold, <span class="italic font-thin font-serif text-gray-400">beautiful</span> web design</span>
+                    <span class="text-indigo-500 md:inline-block">gets people in the door</span>
+                </h1>
+                <div class="mx-auto mt-5 text-gray-500 md:mt-12 md:max-w-lg md:text-center lg:text-lg">
+                    I am a full-stack web developer / UI designer focusing on creative, logical solutions for the web.
+                </div>
+                <div class="flex flex-col items-center mt-12 text-center">
+                    <span class="relative inline-flex max-w-1/4 md:w-auto">
+                        <a href="#_" type="button"
+                            class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white bg-indigo-600 border border-transparent rounded-full md:w-auto hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600">
+                            Download Resume
+                        </a>
+                        
+                    </span>
+                    <a href="#" class="mt-3 text-sm text-indigo-500">Contact me</a>
+                </div>
+            </div>
+        </div> 
+        <!-- End Main Hero Content -->
+
+    </div>
+</section>
+
+<!-- Section 2 -->
+<section class="px-2 py-32 bg-white md:px-0 bg-gray-100">
+  <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
+    <div class="flex flex-wrap items-center sm:-mx-3">
+      <div class="w-full md:w-1/2 md:px-3">
+        <div class="w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0">
+          <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
+            <span class="block xl:inline">Build projects</span>
+            <span class="block text-indigo-600 xl:inline">Functional & Beautiful!</span>
+          </h1>
+          <p class="pr-4 mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">It's never been easier to build functional beautiful websites that convey your message and tell your story.</p>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2">
+        <div class="w-full h-auto overflow-hidden rounded-md shadow-xl sm:rounded-xl">
+            <img src="https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg?cs=srgb&dl=pexels-cottonbro-4065876.jpg&fm=jpg">
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3 -->
+<section id="skills" class="w-full bg-white pt-7 pb-7 md:pt-20 md:pb-24">
+    <div class="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
+
+        <!-- Image -->
+        <div class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
+            <img src="./img/taxi-welcome-to-space.png" class="p-2">
+        </div>
+
+        <!-- Content -->
+        <div class="box-border order-first w-full text-black border-solid md:w-1/2 md:pl-10 md:order-none">
+            <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
+                Full-stack Development
+            </h2>
+            <p class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
+                Experienced in both front-end and back-end web development.
+            </p>
+            <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span class="text-sm font-bold">✓</span></span> Client-side and server-side application
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span class="text-sm font-bold">✓</span></span> Database design and implementation
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span class="text-sm font-bold">✓</span></span> Testing, debugging, version control and documentation
+                </li>
+            </ul>
+        </div>
+        <!-- End  Content -->
+    </div>
+    <div class="box-border flex flex-col items-center content-center px-8 mx-auto mt-2 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16">
+
+        <!-- Content -->
+        <div class="box-border w-full text-black border-solid md:w-1/2 md:pl-6 xl:pl-32">
+            <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
+                Design / Multimedia
+            </h2>
+            <p class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg">
+                Experienced in UI / graphic design and multimedia production.
+            </p>
+            <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span class="text-sm font-bold">✓</span></span> UI design and graphic design
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span class="text-sm font-bold">✓</span></span> Video production and social media solutions
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span class="text-sm font-bold">✓</span></span> Google Analytics and Google Data Studio
+                </li>
+            </ul>
+        </div>
+        <!-- End  Content -->
+
+        <!-- Image -->
+        <div class="box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
+            <img src="./img/taxi-robot.png" class="pl-4">
+        </div>
+    </div>
+</section>
+
+<!-- Section 4 -->
+<section class="bg-gray-100 max-h-80 sm:hidden md:block overflow-y-scroll">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:px-8">
+        <div class="flex flex-wrap justify-center space-x-20 space-y-4 md:space-x-6">
+            <div class="flex items-center pt-4">
+                <i class="fab fa-html5 fa-4x text-gray-500 fill-current"></i>
+            </div>
+            <div class="flex items-center justify-center">
+                <i class="fab fa-css3-alt fa-4x text-gray-500 fill-current"></i>
+            </div>
+            <div class="flex items-center justify-center">
+                <i class="fab fa-sass fa-4x text-gray-500 fill-current"></i>
+            </div>
+            <div class="flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="4em" height="4em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 154">
+                    <path
+                        d="M128 0C93.867 0 72.533 17.067 64 51.2C76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2c-12.8 17.067-27.733 23.467-44.8 19.2c-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0zM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2c9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2c-12.8 17.067-27.733 23.467-44.8 19.2c-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8z"
+                        fill="#6B7280" />
+                </svg>
+            </div>
+            <div class="flex items-center justify-center">
+                <i class="fab fa-js-square fa-4x text-gray-500 fill-current"></i>
+            </div>
+            <div class="flex items-center justify-center">
+                <i class="fab fa-react fa-4x text-gray-500 fill-current"></i>
+            </div>
+            <div class="flex items-center justify-center">
+                <i class="fab fa-vuejs fa-4x text-gray-500 fill-current"></i>
+            </div>
+            <div class="flex items-center justify-center">
+                <i class="fab fa-php fa-4x text-gray-500 fill-current"></i>
+            </div>
+            <div class="flex items-center justify-center">
+                <i class="fab fa-laravel fa-4x text-gray-500 fill-current"></i>
+            </div>
+            <div class="flex items-center justify-center">
+                <i class="fab fa-python fa-4x text-gray-500 fill-current"></i>
+            </div>
+            <div class="flex items-center justify-center">
+                <i class="fas fa-database fa-4x text-gray-500 fill-current"></i>
+            </div>
+            <div class="flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="4em" height="4em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 15 15">
+                    <g fill="none">
+                        <path d="M10 8V7h1v1h-1z" fill="#626262" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.5.421L14 4.213v6.574L7.5 14.58L1 10.787V4.213L7.5.42zM6.332 4A3.332 3.332 0 0 0 3 7.332v.336a3.332 3.332 0 0 0 4.821 2.98l.403-.2l-.448-.895l-.402.2A2.331 2.331 0 0 1 4 7.669v-.336a2.332 2.332 0 0 1 3.374-2.086l.402.201l.448-.894l-.403-.201A3.332 3.332 0 0 0 6.331 4zM9 5v1H8v1h1v1H8v1h1v1h1V9h1v1h1V9h1V8h-1V7h1V6h-1V5h-1v1h-1V5H9z"
+                            fill="#6B7280" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 5 -->
+<section id="projects" class="py-20 bg-white">
+    <div class="container max-w-6xl mx-auto">
+        <h2 class="text-5xl font-bold tracking-tight text-center text-indigo-500">Projects</h2>
+        <p class="mt-2 text-lg text-center text-gray-600">Check out my list of projects below.</p>
+        <div class="grid grid-cols-4 gap-8 mt-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0">
+
+            <a target="_blank" id="p-1" href="https://github.com/ceci0118/Laravel-management-system/tree/main" class="relative flex flex-col items-center justify-center col-span-4 px-8 py-12 space-y-4 overflow-hidden bg-gray-100 sm:rounded-xl">
+                <h4 class="text-xl font-medium text-white">Laravel Management System</h4>
+                <p class="text-base text-center text-gray-200">Laravel, Jetstream, Livewire, AlpineJS, TailwindCSS</p>
+            </a>
+
+            <a target="_blank" id="p-2" href="https://github.com/ceci0118/python_flight_deals" class="flex flex-col items-center justify-center col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl">
+                <h4 class="text-xl font-medium text-white">Flight Deals Finder</h4>
+                <p class="text-base text-center text-gray-200">Get flight deals by SMS using Tequila and Twilio API.</p>
+            </a>
+
+            <a target="_blank" id="p-3" href="https://github.com/ceci0118/API-service-and-client" class="flex flex-col items-center justify-center col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl">
+                <h4 class="text-xl font-medium text-white">Restful API</h4>
+                <p class="text-base text-center text-gray-200">Server-side API development and client-side API usage.</p>
+            </a>
+            
+            <a target="_blank" id="p-4" href="https://ceci0118.github.io/react-weather-app/" class="flex flex-col items-center justify-center col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl">
+                <h4 class="text-xl font-medium text-white">React Weather App</h4>
+                <p class="text-base text-center text-gray-200">Get current weather information using Openweathermap API and React.</p>
+            </a>
+
+            <a target="_blank" id="p-5" href="https://ceci0118.github.io/vuejs-TodoList/" class="flex flex-col items-center justify-center col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl">
+                <h4 class="text-xl font-medium text-white">Vue.js TO-DO List</h4>
+                <p class="text-base text-center text-gray-200">Basic to-do list using Vue.js.</p>
+            </a>
+
+            <a target="_blank" id="p-6" href="https://codepen.io/ceci_law" class="flex flex-col items-center justify-center col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl">
+                <h4 class="text-xl font-medium text-white">CodePen</h4>
+                <p class="text-base text-center text-gray-200">Small playful projects.</p>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- Section 6 -->
+<section id="contact" class="w-full px-8 py-16 bg-gray-100 xl:px-8">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex flex-col items-center md:flex-row">
+
+            <div class="w-full space-y-5 md:w-3/5 md:pr-16">
+                <p class="font-medium text-blue-500 uppercase">Wanna know more?</p>
+                <h2 class="text-2xl font-extrabold leading-none text-black sm:text-3xl md:text-5xl">
+                    Contact Me 👉
+                </h2>
+                <p class="text-xl text-gray-600 md:pr-16">Nice to see you here and thank you for your time in my website. Send me a meesage to tell me your thoughts and know more about me ;)</p>
+            </div>
+
+            <div class="w-full mt-16 md:mt-0 md:w-2/5">
+            
+                <div class="relative z-10 h-auto p-8 py-10 overflow-hidden bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7">
+                    <form action="https://formspree.io/f/mknkwara" method="POST" class="flex flex-col">
+
+                        <div class="md:flex md:items-center mb-6">
+                            <div class="md:w-1/4">
+                                <label class="block text-gray-500 font-bold mb-1 md:mb-0 pr-4" for="inline-full-name">
+                                    Name
+                                </label>
+                            </div>
+                            <div class="md:w-3/4">
+                                <input for="name" name="name"
+                                    class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                                    id="inline-full-name" type="text" placeholder="Your name">
+                            </div>
+                        </div>
+
+                        <div class="md:flex md:items-center mb-6">
+                            <div class="md:w-1/4">
+                                <label class="block text-gray-500 font-bold mb-1 md:mb-0 pr-4" for="inline-full-name">
+                                    Email
+                                </label>
+                            </div>
+                            <div class="md:w-3/4">
+                                <input for="email"  name="email"
+                                    class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                                    id="inline-full-name" type="text" placeholder="Your email">
+                            </div>
+                        </div>
+
+                        <div class="md:flex md:items-center mb-6">
+                            <div class="md:w-1/4">
+                                <label class="block text-gray-500 font-bold mb-1 md:mb-0 pr-4" for="inline-full-name">
+                                    Message
+                                </label>
+                            </div>
+                            <div class="md:w-3/4">
+                                <textarea for="message" name="message"
+                                    class="resize-none overflow-y-scroll bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                                    id="inline-full-name" type="text" placeholder="Tell me your thoughts" rows="5" cols="50"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="w-2/3 mx-auto">
+                            <button type="submit" class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full">Send</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Section 7 -->
+<section class="bg-white">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+
+        <div class="flex justify-center mt-8 space-x-6">
+            <a href="https://codepen.io/ceci_law" class="text-gray-400 hover:text-gray-500" target="_blank">
+                <span class="sr-only">CodePen</span>
+                <i class="fab fa-codepen fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/my_name_is_ccccc/" class="text-gray-400 hover:text-gray-500" target="_blank">
+                <span class="sr-only">Instagram</span>
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ceci0118/" class="text-gray-400 hover:text-gray-500" target="_blank">
+                <span class="sr-only">LinkedIn</span>
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/ceci0118" class="text-gray-400 hover:text-gray-500" target="_blank">
+                <span class="sr-only">GitHub</span>
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+        </div>
+        <p class="mt-8 text-base leading-6 text-center text-gray-400">
+            © <span id="year"></span> Yongshi Luo, All rights reserved.
+        </p>
+    </div>
+</section>
+
+<!-- AlpineJS Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
+
+<script>
+    document.getElementById('year').innerHTML = new Date().getFullYear();
+</script>
+
+</body>
+</html>
